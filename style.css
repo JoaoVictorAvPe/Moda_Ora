@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Viaoda+Libre&display=swap');
+
+:root {
+    --background_header_inicio: #162028;
+    --text_color_menu: #425564;
+    --text_color: #555;
+    --box_color: #003d52;
+    --background_footer: #0b171f;
+    --color_text_foote: #6f8597;
+
+    --h1_size: 3.5rem;
+    --footer_height: 60px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text_color);
+}
+
+.header_inicio {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background_header_inicio);
+}
+
+.menu h1 {
+    color: white;
+    font-family: 'Viaoda Libre', serif;
+    font-size: var(--h1_size);
+    margin: 10px 12%;
+    font-weight: normal;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    width: 30%;
+    justify-content: space-between;
+    margin-right: 5%;
+}
+
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: var(--text_color_menu);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.imagem_fundo {
+    background-image: url(imagens/topo.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+}
+
+.descricao {
+    margin: 100px 0;
+}
+
+.descricao h1 {
+    text-align: center;
+    font-family: 'Viaoda Libre', serif;
+    font-weight: normal;
+    font-size: var(--h1_size);
+}
+
+.descricao p {
+    font-size: 2.0rem;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    line-height: 2;
+}
+
+.section_cards {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.card {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text_color);
+    transition-duration: .3s;
+}
+
+.card a {
+    display: block;
+    color: var(--text_color);
+    font-size: 2.0rem;
+    text-decoration: none;
+    transition-duration: .3s;
+    margin-top: 5px;
+}
+
+.card p {
+    text-transform: none;
+    font-size: 2.0rem;
+}
+
+.card:hover {
+    outline: solid var(--box_color) 5px;
+    outline-offset: 15px;
+    font-size: 3rem;
+}
+
+.card:hover a {
+    font-size: 2.65rem;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color: var(--text_color_menu);
+    color: white;
+}
+
+.descricao_final {
+    color: white;
+    background-color: var(--box_color);
+    background-image: url(imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 10%;
+}
+
+.descricao_final h1 {
+    font-family: 'Viaoda Libre', serif;
+    font-weight: normal;
+    font-size: 6.0rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.descricao_final p {
+    display: block;
+    font-size: 2.0rem;
+    margin-top: 40px;
+    margin: 40px 40% 0 0;
+    line-height: 1.5;
+}
+
+footer {
+    height: var(--footer_height);
+    background-color: var(--background_footer);
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color_text_foote);
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+}
